@@ -1,0 +1,77 @@
+@charset "UTF-8";
+
+*{
+    padding: 0;
+    margin: 0;
+    font: bold 15px Arial, sans-serif;
+}
+
+.geral {
+    background: rgb(98, 202, 243);
+    width: 15%;
+    height: 40vh;
+    margin: auto;
+    margin-top: 100px;
+    border-radius: 15px;
+}
+
+.superior {
+    display: flex;
+    padding: 20px;
+    align-items: center;
+    align-content: center;
+    justify-content: center;
+}
+
+.clear {
+    background: rgb(248, 78, 78);
+    margin: 10px;
+    padding: 15px;
+    border-radius: 10px;
+}
+
+input {
+    padding: 10px;
+    border-radius: 10px;
+    width: 125px;
+    width: 131px;
+    margin: 10px
+}
+
+.numeros {
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    align-content: center;
+    justify-content: center;
+    width: 235px;
+    height: 234px;
+    margin: auto;
+}
+
+.n {
+    background: white;
+    padding: 15px;
+    margin: 10px;
+    border-radius: 10px;
+}
+
+.mais  {
+    background: rgb(207, 206, 206);
+}
+
+.menos {
+    background: rgb(207, 206, 206);
+}
+
+.div {
+    background: rgb(207, 206, 206);
+}
+
+.mult {
+    background: rgb(207, 206, 206);
+}
+
+.igual {
+    background: rgb(199, 243, 199);
+}
