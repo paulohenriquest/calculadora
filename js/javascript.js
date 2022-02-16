@@ -1,6 +1,6 @@
-var input = document.querySelector(".input-campo"),
-    btn = document.querySelector("number"),
-    operador = document.querySelectorAll("nn");
+var input = document.querySelector(".camp"),
+    btn = document.querySelectorAll(".numeros li"),
+    operador = document.querySelectorAll(".nn");
 
     for(var i = 0; i < btn.length; i++){
         document.onkeypress = function(event){
@@ -8,28 +8,28 @@ var input = document.querySelector(".input-campo"),
             // console.log(key)
             for(var e = 0; e <= 10; e++){
                 if(key === (48+e)){
-                    resultado.innerHTML += e;
+                    input.innerHTML += e;
                 }
             }
             switch(key){
                 case 42:
-                    resultado.innerHTML +="*";
+                    input.innerHTML +="*";
                 break;
                     
                 case 43:
-                    resultado.innerHTML +="+";
+                    input.innerHTML +="+";
                 break;
 
                 case 45:
-                    resultado.innerHTML +="-";
+                    input.innerHTML +="-";
                 break;
 
                 case 46:
-                    resultado.innerHTML +=".";
+                    input.innerHTML +=".";
                 break;
 
                 case 47:
-                    resultado.innerHTML +="/";
+                    input.innerHTML +="/";
                 break;
 
                 case 61:
@@ -44,10 +44,10 @@ var input = document.querySelector(".input-campo"),
                     }
                 break;
                 case 67: 
-                    resultado.innerHTML = ""
+                    input.innerHTML = "";
                 break;
                 case 99:
-                    resultado.innerHTML = ""
+                    input.innerHTML = "";
                 break;
                 default:
                     console.log("teste");
@@ -59,7 +59,7 @@ var input = document.querySelector(".input-campo"),
             btnVal = this.innerHTML;
             switch(btnVal){
                 case "c":
-                    resultado.innerHTML = "";
+                    input.innerHTML = "";
                 break;
                 case "=":
                     var equacao = inputVal;
@@ -72,8 +72,8 @@ var input = document.querySelector(".input-campo"),
                 }
                 break;
                 default:
-                    input.innerHTML += inputVal;
+                    input.innerHTML += btnVal;
                 break;
             }
-        })
+        });
     }

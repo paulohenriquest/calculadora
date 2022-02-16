@@ -62,30 +62,28 @@ input {
     margin: auto;
 }
 
-.n {
+li {
     background: white;
     padding: 15px;
     margin: 8px;
     border-radius: 10px;
 }
 
-.mais  {
+.nn  {
     background: rgb(207, 206, 206);
 }
 
-.menos {
+.nn {
     background: rgb(207, 206, 206);
 }
 
-.div {
+
+
+.nn {
     background: rgb(207, 206, 206);
 }
 
-.mult {
-    background: rgb(207, 206, 206);
-}
-
-.igual {
+.nr {
     background: rgb(199, 243, 199);
 }
 
