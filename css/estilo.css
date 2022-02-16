@@ -9,8 +9,8 @@
 
 .geral {
     background: rgb(98, 202, 243);
-    width: 15%;
-    height: 40vh;
+    width: 16%;
+    height: 45vh;
     margin: auto;
     margin-top: 100px;
     border-radius: 15px;
@@ -31,25 +31,21 @@
     margin: 10px;
     padding: 15px;
     border-radius: 10px;
-    margin-left: 16px;
+    /* margin-left: 16px; */
+    width: 73%;
+    text-align: center;
 }
+
 
 .camp {
     background: white;
-    margin: 10px;
+    margin: 0 auto;
     padding: 15px;
     border-radius: 10px;
-    width: 50%;
+    width: 68%;
     height: 20px;
 }
 
-input {
-    padding: 10px;
-    border-radius: 10px;
-    width: 125px;
-    width: 131px;
-    margin: 10px
-}
 
 .numeros {
     display: flex;
@@ -58,8 +54,9 @@ input {
     align-content: center;
     justify-content: center;
     width: 235px;
-    height: 234px;
+    height: 315px;
     margin: auto;
+    list-style: none;
 }
 
 li {
@@ -87,3 +84,30 @@ li {
     background: rgb(199, 243, 199);
 }
 
+li:hover {
+    background: yellow;
+}
+
+@media (max-width: 1280px) {
+    .geral {
+        width: auto;
+        height: auto;
+    }
+
+    .numeros {
+        height: auto;
+    }
+}
+
+@media (max-width: 798px) {
+    .geral {
+        margin: 0 auto;
+        width: auto;
+        height: auto;
+        margin-top: 30px;
+    }
+
+    .numeros {
+        height: auto;
+    }
+}
